@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditActivity">
+
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/darkBackground">
+
+        <TextView
+            android:id="@+id/textviewAddEditTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:gravity="center"
+            android:text="Manage your trip"
+            android:textSize="44dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edittextAddEditUserName"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:hint="Enter title"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/title"
+            android:drawablePadding="12dp"/>
+
+        <EditText
+            android:id="@+id/edittextAddEditSourceLocation"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:hint="Enter source location"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/source"
+            android:drawablePadding="12dp"/>
+
+        <EditText
+            android:id="@+id/edittextAddEditDestinationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="34dp"
+            android:padding="12dp"
+            android:hint="Enter destination location"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/destination"
+            android:drawablePadding="12dp"/>
+
+        <TextView
+            android:id="@+id/textviewAddEditDescription1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Select trip date : "
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <DatePicker
+            android:id="@+id/datepickerAddEditDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/textviewAddEditDescription2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Select trip priority : "
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroupAddEditPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <RadioButton
+                android:id="@+id/radiobuttonAddEditHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="26dp"
+                android:text="High"/>
+
+            <RadioButton
+                android:id="@+id/radiobuttonAddEditMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="26dp"
+                android:text="Medium"/>
+
+            <RadioButton
+                android:id="@+id/radiobuttonAddEditLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edittextAddEditNotes"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="34dp"
+            android:padding="12dp"
+            android:hint="Enter your notes"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/notes"
+            android:drawablePadding="12dp"/>
+
+        <Button
+            android:id="@+id/buttonAddEditSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/save"/>
+
+    </LinearLayout>
+
+</ScrollView>

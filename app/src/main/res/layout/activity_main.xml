@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/darkBackground"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittextMainSearch"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:hint="Search trip"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/search"
+        android:drawablePadding="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewMainTrip"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/darkBackground"/>
+
+    <Button
+        android:id="@+id/buttonMainAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/add"/>
+
+</LinearLayout>

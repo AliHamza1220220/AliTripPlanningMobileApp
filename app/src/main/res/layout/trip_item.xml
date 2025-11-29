@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageviewTask"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/trip"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Trip title"
+            android:textSize="24sp"
+            android:textColor="@color/darkBackground"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textviewSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Source to Destination • Date • Priority"
+            android:textSize="14sp"
+            android:textColor="@color/darkBackground"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
